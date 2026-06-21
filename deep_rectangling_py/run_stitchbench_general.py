@@ -275,7 +275,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Run OpenCV+DeepRectangling on StitchBench General with MDR/NIQE.")
     parser.add_argument("--dataset", default=r"D:\StitchBench\General")
     parser.add_argument("--manifest", default=DEFAULT_MANIFEST)
-    parser.add_argument("--out", default="outputs/stitchbench_general")
+    parser.add_argument("--out", default=r"D:\StitchBench_Result\deep_rectangling")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--scene", action="append", default=None)
     parser.add_argument("--stop-on-error", action="store_true")

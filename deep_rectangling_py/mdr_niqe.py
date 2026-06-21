@@ -23,10 +23,7 @@ CATEGORIES = (
     "SPHP",
 )
 
-DEFAULT_MANIFEST = (
-    r"C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss"
-    r"\runs\depth_gsp_v5_planarity035\manifest.csv"
-)
+DEFAULT_MANIFEST = r"D:\StitchBench_Result\_shared\manifest.csv"
 
 
 def category_for(dataset: str) -> Optional[str]:

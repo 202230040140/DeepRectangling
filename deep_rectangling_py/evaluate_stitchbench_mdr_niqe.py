@@ -10,10 +10,7 @@ from typing import Any
 
 from .mdr_niqe import finite_mean
 
-DEFAULT_BASELINE_ROOT = (
-    r"C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss"
-    r"\runs\depth_gsp_v5_planarity035"
-)
+DEFAULT_BASELINE_ROOT = r"D:\StitchBench_Result\depth_gsp"
 
 
 def parse_float(value: Any) -> float:
@@ -153,9 +150,9 @@ def compare_to_baseline(output_root: Path, candidate_rows: list[dict[str, Any]],
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Compare DeepRectangling MDR/NIQE tables against OBJ-GSP baseline.")
-    parser.add_argument("--candidate-root", default="outputs/stitchbench_general")
+    parser.add_argument("--candidate-root", default=r"D:\StitchBench_Result\deep_rectangling")
     parser.add_argument("--baseline-root", default=DEFAULT_BASELINE_ROOT)
-    parser.add_argument("--output-root", default="outputs/deeprect_mdr_niqe")
+    parser.add_argument("--output-root", default=r"D:\StitchBench_Result\deep_rectangling\deeprect_mdr_niqe")
     parser.add_argument("--baseline-name", default="Depth-GSP-v5")
     parser.add_argument("--candidate-name", default="OpenCV+DeepRectangling")
     return parser

@@ -9,7 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Rewrite rectangling job manifest with absolute paths.")
-    parser.add_argument("--manifest", default="outputs/stitchbench_general/_rectangling_jobs.json")
+    parser.add_argument("--manifest", default=r"D:\StitchBench_Result\deep_rectangling\_rectangling_jobs.json")
     args = parser.parse_args()
     path = Path(args.manifest)
     jobs = json.loads(path.read_text(encoding="utf-8-sig"))
