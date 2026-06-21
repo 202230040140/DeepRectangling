@@ -11,7 +11,7 @@ from typing import Any
 from .mdr_niqe import finite_mean
 
 DEFAULT_BASELINE_ROOT = (
-    r"C:\Users\22499\Documents\GitHub\OBJ-GSP\experiments\phase1_depth_loss"
+    r"C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss"
     r"\runs\depth_gsp_v5_planarity035"
 )
 

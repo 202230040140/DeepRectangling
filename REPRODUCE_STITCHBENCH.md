@@ -27,7 +27,7 @@ TensorFlow 2.x + `tf-slim` runs the legacy checkpoint via `deep_rectangling_py/t
 cd c:\Users\22499\Documents\GitHub\DeepRectangling
 $env:OPENCV_OPENCL_RUNTIME = "disabled"
 py -3.13 -m deep_rectangling_py.run_stitchbench_general `
-  --manifest C:\Users\22499\Documents\GitHub\OBJ-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035\manifest.csv `
+  --manifest C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035\manifest.csv `
   --out outputs\stitchbench_general `
   --device cuda `
   --gpu 0
@@ -38,7 +38,7 @@ py -3.13 -m deep_rectangling_py.run_stitchbench_general `
 ```powershell
 py -3.13 -m deep_rectangling_py.evaluate_stitchbench_mdr_niqe `
   --candidate-root outputs\stitchbench_general `
-  --baseline-root C:\Users\22499\Documents\GitHub\OBJ-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035 `
+  --baseline-root C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035 `
   --output-root outputs\deeprect_mdr_niqe
 ```
 
@@ -61,7 +61,7 @@ outputs/stitchbench_general/
 
 ```powershell
 py -3.13 -m deep_rectangling_py.run_stitchbench_general `
-  --manifest C:\Users\22499\Documents\GitHub\OBJ-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035\manifest.csv `
+  --manifest C:\Users\22499\Documents\GitHub\Depth-GSP\experiments\phase1_depth_loss\runs\depth_gsp_v5_planarity035\manifest.csv `
   --out outputs\smoke `
   --scene SPHP-01_bridge `
   --limit 1 `
