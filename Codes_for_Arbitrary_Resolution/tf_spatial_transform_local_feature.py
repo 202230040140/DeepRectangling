@@ -186,7 +186,7 @@ def transformer(U, theta, name='SpatialTransformer', **kwargs):
             ##########################################
             print("Hs")
             print(Hs.shape)
-            H_array = UpSampling2D(size=(24/grid_h, 32/grid_w))(Hs)
+            H_array = UpSampling2D(size=(24 // grid_h, 32 // grid_w))(Hs)
             H_array = tf.reshape(H_array, [-1, 3, 3])
             ##########################################
             

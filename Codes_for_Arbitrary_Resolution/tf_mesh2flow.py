@@ -177,7 +177,7 @@ def mesh2flow(mesh, name='Mesh2Flow', **kwargs):
             ##########################################
             print("Hs")
             print(Hs.shape)
-            H_array = UpSampling2D(size=(384/grid_h, 512/grid_w))(Hs)
+            H_array = UpSampling2D(size=(384 // grid_h, 512 // grid_w))(Hs)
             H_array = tf.reshape(H_array, [-1, 3, 3])
             ##########################################
             

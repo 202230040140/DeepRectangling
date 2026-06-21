@@ -1,0 +1,11 @@
+# Reproduction dependencies for OpenCV Stitcher + DeepRectangling on StitchBench General.
+opencv-contrib-python
+numpy
+scipy
+scikit-image
+pillow
+pyiqa
+pandas
+tqdm
+tensorflow
+tf-slim

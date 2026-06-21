@@ -1,0 +1,33 @@
+outputs/
+logs/
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.tmp
+
+# TensorFlow checkpoints and large model artifacts (keep placeholder txt only)
+Codes/checkpoints/**/*.ckpt*
+Codes/checkpoints/**/*.data-*
+Codes/checkpoints/**/*.index
+Codes/checkpoints/**/*.meta
+Codes_for_Arbitrary_Resolution/checkpoints/**/*.ckpt*
+Codes_for_Arbitrary_Resolution/checkpoints/**/*.data-*
+Codes_for_Arbitrary_Resolution/checkpoints/**/*.index
+Codes_for_Arbitrary_Resolution/checkpoints/**/*.meta
+
+# VGG weights used only for training
+Codes/vgg19/*.mat
+
+# Generated rectangling results
+Codes/final_rectangling/
+Codes_for_Arbitrary_Resolution/rectangling/
+final_rectangling/
+
+# PyTorch / other weight formats
+*.pth
+*.pt
+*.onnx
